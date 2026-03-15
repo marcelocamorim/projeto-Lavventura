@@ -1,0 +1,213 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 1260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cotacao {
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px var(--var-cor-preto);
+    border-radius: 15px;
+}
+
+.cotacao a {
+
+    text-decoration: none;
+    color: var(--var-cor-preto);
+    line-height: 2rem;
+}
+
+
+.container-link-veja-mais {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.container-link-veja-mais a {
+    background-color: var(--var-cor-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--var-cor-branco);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: .3s;
+
+}
+
+.container-link-veja-mais a:hover {
+    background-color: var(--var-cor-0);
+    color: var(--var-cor-preto);
+    font-weight: bold;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+.texto-veja-mais {
+    padding: 10px;
+}
+
+.icone-veja-mais {
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--var-cor-1);
+    padding: 5px;
+    font-size: 3rem;
+}
+
+.icone-veja-mais span {
+    font-size: 3rem;
+}
+
+
+.container-section4 {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1260px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casamentos {
+    box-shadow: 0px 0px 10px var(--var-cor-3);
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.casamentos:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px red;
+}
+
+.container-casamento-esquerda {
+    width: 80%;
+}
+
+.container-casamento-esquerda img {
+    width: 100%;
+}
+
+.container-casamento-direita {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container-casamento-direita img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 40%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+/*animação imagem da direita casamentos.com*/
+@keyframes zoonIn {
+    from {
+        transform: scale(1);
+    }
+    
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.img-anima {
+    animation: zoonIn 8s ease-in-out infinite alternate;
+}
+/*cadastur*/
+.cadastur {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--var-cor-1) 20%, var(--var-cor-1) 60%, var(--var-cor-branco) 100%);
+}
+
+.container-img {
+    width: auto;
+}
+
+.cadastur img {
+    box-shadow: 0px 0px 10px var(--var-cor-preto);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.avaliacoes{
+    width: calc(100% -20px);
+    margin: 100px 20px;
+}
+.espaco{
+    margin-top: 200px;
+}
+
+@media screen and (max-width:1180px) {   
+
+
+    .casamentos {
+        width: 98%;
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+    
+    .casamentos {
+        width: 95%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .container-casamento-esquerda {
+        width: 100%;
+        height: 120px;
+    }
+
+    .container-casamento-esquerda img {
+        width: 100%;
+        margin-left: 40px;
+    }
+
+    .container-casamento-direita {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-casamento-direita img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 0% 50%;
+
+    }
+
+}
+

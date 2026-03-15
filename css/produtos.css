@@ -1,0 +1,278 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 1260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itens-grid {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.titulo-section {
+    padding: 10px;
+    align-self: start;
+    margin-top: 80px;
+    line-height: 1.5rem;
+    text-align: justify;
+    position: relative;
+}
+
+
+.titulo-section h1 {
+    margin-bottom: 20px;
+}
+
+.item {
+    width: 280px;
+    box-shadow: 0px 0px 12px var(--var-cor-preto);
+    border-radius: 15px;
+}
+
+.item-imagem {
+    width: 100%;
+    height: 180px;
+}
+
+.item img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.item-texto {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+/*inicio itens cruzeiro*/
+.item.cruzeiro {
+    height: 740px;
+}
+
+.cruzeiro .item-imagem {
+    width: 100%;
+    height: 350px;
+}
+
+.cruzeiro .item-texto {
+    gap: 1rem;
+}
+
+.cruzeiro .periodo {
+    text-align: center;
+}
+
+/* fim itens cruzeiro*/
+
+
+
+.item-texto span {
+    display: block;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+.periodo {
+    line-height: 1.5rem;
+}
+
+.lista-inclusive {
+    font-size: .8rem;
+}
+
+.preco {
+    line-height: 1.3rem;
+
+}
+
+.destaque {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.letras-miudas {
+    font-size: .7rem;
+    line-height: 1rem;
+}
+
+.linha-divisao {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.btn-contato {
+    width: 220px;
+    border: none;
+    background-color: var(--var-cor-1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.btn-contato:hover {
+    transform: scale(1.1);
+    background-color: var(--var-cor-2);
+    box-shadow: 0px 0px 10px var(--var-cor-1);
+}
+
+.btn-contato a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+.btn-contato img {
+    width: 30px;
+}
+.espaco{
+    margin: 80px;
+}
+
+@media screen and (max-width:1180px) {
+    .itens-grid {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+        place-items: center;
+
+    }
+    
+}
+
+@media screen and (max-width:920px) {
+    .itens-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .itens-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: .5rem;
+        row-gap: 2rem;
+    }
+
+    .itens-grid-horizontal {
+        grid-template-columns: 1fr;
+
+    }
+
+    /*inicio itens cruzeiro*/
+    .item.cruzeiro {
+        height: 400px;
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cruzeiro .item-imagem {
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .cruzeiro .item-imagem img {
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0;
+    }
+
+    .cruzeiro .item-texto {
+        padding: 20px 0;
+        width: 50%;
+        gap: .8rem;
+    }
+
+    .cruzeiro .periodo {
+        text-align: center;
+    }
+
+    /* fim itens cruzeiro*/
+
+
+    .item {
+        width: 230px;
+    }
+
+    .item-texto {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .periodo {
+        line-height: 1.5rem;
+    }
+
+    .lista-inclusive {
+        font-size: .8rem;
+    }
+
+    .preco {
+        line-height: 1.3rem;
+
+    }
+
+    .destaque {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .letras-miudas {
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+
+
+    .btn-contato {
+        width: 180px;
+        border: none;
+        background-color: var(--var-cor-1);
+        padding: 10px;
+        border-radius: 10px;
+        transition: .2s;
+    }
+
+    
+}

@@ -1,0 +1,31 @@
+/*
+break Points
+1260 tela desktop
+768 tela mobile
+
+
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --var-cor-0: #52e6cd;
+    --var-cor-1: #00A388;
+    --var-cor-2: #046380;
+    --var-cor-3: #02333b;
+    --var-cor-branco: #ffffff;
+    --var-cor-preto: #000000;
+    --var-cor-whats: #08C40E;
+
+
+}

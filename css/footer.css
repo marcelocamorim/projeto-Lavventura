@@ -1,0 +1,247 @@
+/*header footer*/
+
+.header-footer {
+    background-color: var(--var-cor-1);
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-header-footer {
+    width: 100%;
+    max-width: 1260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.text-header-footer {
+    color: var(--var-cor-branco);
+    font-size: 1.2rem;
+}
+
+.footer .btn-social {
+    width: 40px;
+    height: 40px;
+    background-color: var(--var-cor-2);
+}
+
+.footer .btn-social:hover,
+.footer .btn-whats:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 5px 5px var(--var-cor-3);
+}
+
+.footer .btn-social img {
+    width: 120%;
+    height: 120%;
+}
+
+.footer .btn-whats {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    background-color: var(--var-cor-2);
+}
+
+.footer .btn-whats img {
+    width: 60%;
+    height: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+/*main footer*/
+footer ul {
+    list-style: none;
+    line-height: 3rem;
+}
+
+
+
+.main-footer {
+    padding: 30px 0;
+    background-color: var(--var-cor-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+
+}
+
+.container-main-footer {
+    width: 100%;
+    max-width: 1260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-logo-footer {
+    align-self: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 50px;
+}
+
+.container-logo-footer img {
+    width: 120px;
+}
+
+.container-links-main-footer {
+    width: 100%;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.div-footer3 img {
+    width: 20px;
+}
+
+.div-footer3 a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.main-footer h1 {
+    color: var(--var-cor-branco);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.main-footer p {
+    color: var(--var-cor-branco);
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: var(--var-cor-branco);
+    padding: 10px 0;
+
+}
+
+.footer-footer {
+    background-color: var(--var-cor-preto);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--var-cor-1);
+    font-size: 1.2rem;
+}
+
+.footer-footer a {
+    text-decoration: none;
+    color: var(--var-cor-branco);
+
+}
+
+.link-menu-footer {
+    position: relative;
+}
+
+.link-menu-footer::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: -2px;
+    height: 1px;
+    width: 70%;
+    background-color: var(--var-cor-branco);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.link-menu-footer:hover::before {
+    transform: scaleX(1);
+}
+
+.link-menu-footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    width: 40px;
+    height: 20px;
+    background: url("../imagens/icone-aviao.PNG") no-repeat center;
+    background-size: contain;
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.2s ease;
+}
+
+.link-menu-footer:hover::after {
+    left: 75%;
+    opacity: 1;
+}
+
+.link-menu-footer.contatos::after {
+    bottom: 3px;
+}
+
+.link-menu-footer.contatos::before {
+    bottom: 12px;
+}
+
+footer hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, transparent 0%, var(--var-cor-0) 15%, var(--var-cor-0) 60%, transparent 80%);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1250px) {
+
+    .header-footer,
+    .container-main-footer {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container-links-main-footer {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+
+    }
+
+    footer .div-footer3 ul {
+        line-height: 2rem;
+
+    }
+
+    .link-menu-footer.contatos::after {
+        bottom: -6px;
+    }
+
+    .link-menu-footer.contatos::before {
+        bottom: 6px;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .container-links-main-footer {
+        grid-template-columns:1fr;
+        row-gap: 4rem;
+
+    }
+
+}
+
+
